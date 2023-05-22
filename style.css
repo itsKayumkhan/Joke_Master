@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fabb2e;
+    overflow: hidden;
+}
+
+.ul-list {
+
+    display: flex;
+    justify-content: end;
+    background: #fff;
+    list-style: none;
+
+
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    padding: 0.51rem;
+
+}
+
+li {
+    text-decoration: none;
+
+}
+
+.list {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 88vh;
+}
+
+.title {
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 60vw;
+    height: 50vh;
+    justify-content: center;
+    box-shadow: 0 9px 20px -2px;
+    border-radius: 27px;
+
+}
+
+.joke {
+    font-size: 1.7rem;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.btn {
+    display: flex;
+    width: 35vh;
+    background: powderblue;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 20px;
+
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px -6px;
+    transition: .5s;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width :320px) {
+    .ul-list {
+        display: none;
+    }
+
+    .box {
+        width: 95vw;
+        height: 70vh;
+    }
+
+    .title {
+
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .ul-list {
+        display: none;
+    }
+
+    .box {
+       width: 110vw;
+        height: 69vh;
+ }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        width: 117vw;
+    }
+    .main{
+        width: 116vw;
+    }
+}
